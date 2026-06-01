@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Prashant Saud | Chartered Accountant & Auditor</title>
+    <meta name="description" content="Get in touch with Prashant Saud in New Baneshwor, Kathmandu. Book a financial consultation, request an audit service, or consult on Nepalese corporate tax compliance." />
+    
+    <link rel="icon" type="image/png" href="https://img.icons8.com/ios-filled/50/BF9650/accounting.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --navy: #0C1B33;
+            --navy2: #132240;
+            --gold: #BF9650;
+            --gold2: #D4AF6E;
+            --cream: #F5F0E8;
+            --offwhite: #FAF8F5;
+            --text: #1A2540;
+            --muted: #6B7A99;
+            --border: rgba(191, 150, 80, 0.25);
+            --transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Jost', sans-serif;
+            background: var(--offwhite);
+            color: var(--text);
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* ── CUSTOM SELECTION & SCROLLBAR ── */
+        ::selection {
+            background: var(--gold);
+            color: var(--navy);
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--navy);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--gold);
+            border: 2px solid var(--navy);
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--gold2);
+        }
+
+        /* ── NAV ── */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 6vw;
+            height: 72px;
+            background: var(--navy);
+            border-bottom: 1px solid var(--border);
+            transition: var(--transition);
+        }
+
+        .nav-logo {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.35rem;
+            font-weight: 600;
+            color: var(--cream);
+            letter-spacing: 0.04em;
+            text-decoration: none;
+            position: relative;
+            z-index: 1001;
+        }
+
+        .nav-logo span {
+            color: var(--gold);
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: rgba(245, 240, 232, 0.75);
+            text-decoration: none;
+            font-size: 0.82rem;
+            font-weight: 500;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            position: relative;
+            padding: 0.5rem 0;
+            transition: var(--transition);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: var(--gold);
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-links a:hover {
+            color: var(--gold);
+        }
+
+        .nav-cta {
+            background: var(--gold);
+            color: var(--navy) !important;
+            padding: 0.55rem 1.4rem !important;
+            border-radius: 3px;
+            font-weight: 600 !important;
+            box-shadow: 0 4px 15px rgba(191, 150, 80, 0.2);
+        }
+
+        .nav-cta::after {
+            display: none !important;
+        }
+
+        .nav-cta:hover {
+            background: var(--gold2) !important;
+            transform: translateY(-1px);
+            box-shadow: 0 6px 20px rgba(191, 150, 80, 0.3);
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 6px;
+            cursor: pointer;
+            border: none;
+            background: transparent;
+            padding: 4px;
+            position: relative;
+            z-index: 1001;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background: var(--cream);
+            transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+            background: var(--gold);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+            transform: translateX(-10px);
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+            background: var(--gold);
+        }
+
+        /* ── PAGE HERO ── */
+        .page-hero {
+            background: var(--navy);
+            padding: 150px 8vw 90px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .page-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse 70% 80% at 85% 50%, rgba(191, 150, 80, 0.08) 0%, transparent 75%);
+            pointer-events: none;
+        }
+
+        .page-hero::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(191, 150, 80, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(191, 150, 80, 0.03) 1px, transparent 1px);
+            background-size: 60px 60px;
+            pointer-events: none;
+        }
+
+        .page-hero-inner {
+            position: relative;
+            z-index: 1;
+            max-width: 650px;
+        }
+
+        .page-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            font-size: 0.72rem;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--gold);
+            font-weight: 600;
+            margin-bottom: 1.2rem;
+        }
+
+        .page-tag::before {
+            content: '';
+            width: 28px;
+            height: 1px;
+            background: var(--gold);
+        }
+
+        .page-hero h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(2.8rem, 5vw, 4.5rem);
+            font-weight: 700;
+            color: var(--cream);
+            line-height: 1.1;
+        }
+
+        .page-hero h1 em {
+            color: var(--gold);
+            font-style: italic;
+            font-weight: 300;
+        }
+
+        .page-hero p {
+            margin-top: 1.5rem;
+            font-size: 1.05rem;
+            color: rgba(245, 240, 232, 0.7);
+            line-height: 1.8;
+            font-weight: 300;
+        }
+
+        /* ── CONTACT MAIN ── */
+        .contact-main {
+            padding: 7rem 8vw;
+            display: grid;
+            grid-template-columns: 1fr 1.3fr;
+            gap: 5rem;
+            align-items: start;
+        }
+
+        .contact-info {
+            position: sticky;
+            top: 110px;
+        }
+
+        .section-tag {
+            font-size: 0.72rem;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--gold);
+            font-weight: 600;
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        .section-tag::before {
+            content: '';
+            width: 28px;
+            height: 1px;
+            background: var(--gold);
+        }
+
+        .info-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(2rem, 2.5vw, 2.6rem);
+            font-weight: 700;
+            color: var(--navy);
+            line-height: 1.2;
+            margin-bottom: 1.2rem;
+        }
+
+        .info-title em {
+            color: var(--gold);
+            font-style: italic;
+            font-weight: 300;
+        }
+
+        .info-body {
+            font-size: 0.95rem;
+            line-height: 1.8;
+            color: var(--muted);
+            font-weight: 300;
+            margin-bottom: 2.5rem;
+        }
+
+        .contact-cards {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+        }
+
+        .contact-card {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.2rem;
+            padding: 1.5rem 1.8rem;
+            background: white;
+            border: 1px solid rgba(191, 150, 80, 0.12);
+            border-radius: 4px;
+            box-shadow: 0 4px 15px rgba(12, 27, 51, 0.01);
+            transition: var(--transition);
+        }
+
+        .contact-card:hover {
+            border-color: var(--gold);
+            box-shadow: 0 10px 30px rgba(12, 27, 51, 0.05);
+            transform: translateX(4px);
+        }
+
+        .cc-icon {
+            width: 44px;
+            height: 44px;
+            background: rgba(191, 150, 80, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+            box-shadow: 0 4px 10px rgba(191, 150, 80, 0.1);
+            transition: var(--transition);
+        }
+
+        .contact-card:hover .cc-icon {
+            background: var(--gold);
+            color: var(--navy);
+        }
+
+        .cc-label {
+            font-size: 0.72rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--gold);
+            font-weight: 600;
+        }
+
+        .cc-value {
+            font-size: 0.95rem;
+            color: var(--text);
+            font-weight: 500;
+            margin-top: 0.3rem;
+            line-height: 1.5;
+        }
+
+        .cc-value a {
+            color: var(--text);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .cc-value a:hover {
+            color: var(--gold);
+        }
+
+        /* Form column */
+        .contact-form-wrap {
+            background: white;
+            border: 1px solid rgba(191, 150, 80, 0.15);
+            border-radius: 6px;
+            padding: 3.5rem;
+            box-shadow: 0 10px 40px rgba(12, 27, 51, 0.02);
+            transition: var(--transition);
+        }
+
+        .contact-form-wrap:hover {
+            border-color: rgba(191, 150, 80, 0.3);
+            box-shadow: 0 15px 50px rgba(12, 27, 51, 0.05);
+        }
+
+        .form-heading {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--navy);
+            margin-bottom: 0.4rem;
+        }
+
+        .form-sub {
+            font-size: 0.85rem;
+            color: var(--muted);
+            margin-bottom: 2.2rem;
+            font-weight: 300;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            font-size: 0.75rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--muted);
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            font-family: 'Jost', sans-serif;
+            font-size: 0.92rem;
+            font-weight: 400;
+            padding: 0.9rem 1.1rem;
+            border: 1px solid rgba(191, 150, 80, 0.2);
+            border-radius: 4px;
+            background: var(--offwhite);
+            color: var(--text);
+            outline: none;
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            width: 100%;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: var(--gold);
+            background: white;
+            box-shadow: 0 0 0 4px rgba(191, 150, 80, 0.12);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 140px;
+        }
+
+        .form-group select {
+            appearance: none;
+            cursor: pointer;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23BF9650' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 1.1rem center;
+            background-size: 1.2rem;
+            padding-right: 2.5rem;
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: rgba(107, 122, 153, 0.45);
+        }
+
+        .btn-submit {
+            background: var(--navy);
+            color: var(--cream);
+            border: none;
+            cursor: pointer;
+            padding: 1.1rem 2.5rem;
+            font-family: 'Jost', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            border-radius: 3px;
+            width: 100%;
+            margin-top: 0.5rem;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(12, 27, 51, 0.2);
+        }
+
+        .btn-submit:hover {
+            background: var(--navy2);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(12, 27, 51, 0.3);
+        }
+
+        .btn-submit.loading {
+            pointer-events: none;
+            opacity: 0.7;
+        }
+
+        /* Success state */
+        .success-msg {
+            display: none;
+            text-align: center;
+            padding: 3rem 2rem;
+            animation: scaleIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        @keyframes scaleIn {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .success-msg.show {
+            display: block;
+        }
+
+        .success-icon {
+            font-size: 3.5rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .success-msg h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2rem;
+            color: var(--navy);
+            margin-bottom: 0.6rem;
+        }
+
+        .success-msg p {
+            font-size: 0.95rem;
+            color: var(--muted);
+            line-height: 1.6;
+        }
+
+        /* ── MAP / LOCATION ── */
+        .location-section {
+            padding: 0 8vw 7rem;
+        }
+
+        .loc-inner {
+            background: var(--navy);
+            border-radius: 4px;
+            padding: 4rem;
+            display: grid;
+            grid-template-columns: 1fr 1.8fr;
+            gap: 4rem;
+            align-items: center;
+            box-shadow: 0 15px 45px rgba(12, 27, 51, 0.15);
+            border: 1px solid rgba(191, 150, 80, 0.15);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .loc-inner::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 10% 80%, rgba(191, 150, 80, 0.04) 0%, transparent 40%);
+            pointer-events: none;
+        }
+
+        .loc-text .loc-tag {
+            font-size: 0.72rem;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--gold);
+            font-weight: 600;
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        .loc-text .loc-tag::before {
+            content: '';
+            width: 20px;
+            height: 1px;
+            background: var(--gold);
+        }
+
+        .loc-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--cream);
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .loc-title em {
+            color: var(--gold);
+            font-style: italic;
+        }
+
+        .loc-details {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+
+        .loc-detail {
+            font-size: 0.88rem;
+            color: rgba(245, 240, 232, 0.65);
+            display: flex;
+            align-items: flex-start;
+            gap: 0.8rem;
+            line-height: 1.5;
+        }
+
+        .loc-detail strong {
+            color: var(--cream);
+            min-width: 80px;
+        }
+
+        .map-embed {
+            border-radius: 4px;
+            overflow: hidden;
+            height: 280px;
+            border: 1px solid var(--border);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .map-embed iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* ── FOOTER ── */
+        footer {
+            background: #080F1E;
+            padding: 4rem 8vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            border-top: 1px solid rgba(191, 150, 80, 0.1);
+        }
+
+        .footer-logo {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--cream);
+            text-decoration: none;
+        }
+
+        .footer-logo span {
+            color: var(--gold);
+        }
+
+        .footer-left-wrap {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+
+        .footer-socials {
+            display: flex;
+            gap: 1.2rem;
+            list-style: none;
+            align-items: center;
+        }
+
+        .footer-socials a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 34px;
+            height: 34px;
+            border: 1px solid rgba(191, 150, 80, 0.25);
+            border-radius: 50%;
+            transition: var(--transition);
+        }
+
+        .footer-socials a:hover {
+            border-color: var(--gold);
+            background: rgba(191, 150, 80, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .footer-socials svg {
+            width: 16px;
+            height: 16px;
+            fill: var(--gold);
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 2.2rem;
+            list-style: none;
+        }
+
+        .footer-links a {
+            color: var(--muted);
+            text-decoration: none;
+            font-size: 0.8rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--gold);
+        }
+
+        .footer-copy {
+            color: var(--muted);
+            font-size: 0.78rem;
+            font-weight: 300;
+        }
+
+        /* ── ANIMATIONS ── */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ── RESPONSIVE MEDIA QUERIES ── */
+        @media (max-width: 1024px) {
+            .contact-main {
+                gap: 3.5rem;
+                padding-left: 6vw;
+                padding-right: 6vw;
+            }
+            .loc-inner {
+                padding: 3.5rem;
+                gap: 3rem;
+            }
+        }
+
+        @media (max-width: 900px) {
+            nav {
+                padding: 0 6vw;
+            }
+
+            .nav-links {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                position: fixed;
+                top: 72px;
+                left: 0;
+                width: 100%;
+                height: calc(100vh - 72px);
+                background: rgba(12, 27, 51, 0.98);
+                backdrop-filter: blur(15px);
+                -webkit-backdrop-filter: blur(15px);
+                padding: 3rem 2rem;
+                gap: 2.2rem;
+                border-top: 1px solid var(--border);
+                transform: translateY(-100%);
+                opacity: 0;
+                visibility: hidden;
+                transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease, visibility 0.3s ease;
+                z-index: 999;
+                overflow-y: auto;
+            }
+
+            .nav-links.active {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .nav-links li {
+                opacity: 0;
+                transform: translateY(20px);
+                transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1), transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+                width: 100%;
+                text-align: center;
+            }
+
+            .nav-links.active li {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            .nav-links.active li:nth-child(1) { transition-delay: 0.1s; }
+            .nav-links.active li:nth-child(2) { transition-delay: 0.15s; }
+            .nav-links.active li:nth-child(3) { transition-delay: 0.2s; }
+            .nav-links.active li:nth-child(4) { transition-delay: 0.25s; }
+            .nav-links.active li:nth-child(5) { transition-delay: 0.3s; }
+
+            .nav-links a {
+                font-size: 1.15rem;
+                letter-spacing: 0.15em;
+                display: block;
+                padding: 0.6rem;
+            }
+
+            .nav-links a::after {
+                display: none;
+            }
+
+            .nav-links a.nav-cta {
+                display: inline-block;
+                width: auto;
+                padding: 0.8rem 2.5rem !important;
+                margin-top: 1rem;
+                font-size: 0.95rem;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .contact-main {
+                grid-template-columns: 1fr;
+                gap: 4rem;
+            }
+
+            .contact-info {
+                position: relative;
+                top: 0;
+            }
+
+            .loc-inner {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            section {
+                padding: 5rem 6vw;
+            }
+
+            .location-section {
+                padding: 0 6vw 5rem;
+            }
+
+            footer {
+                flex-direction: column;
+                text-align: center;
+                gap: 2.5rem;
+                padding: 4.5rem 6vw;
+            }
+
+            .footer-links {
+                flex-direction: column;
+                gap: 1.2rem;
+                align-items: center;
+            }
+            
+            .footer-left-wrap {
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .contact-form-wrap {
+                padding: 2.5rem 1.5rem;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
+
+            .loc-inner {
+                padding: 2.5rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <a class="nav-logo" href="index.html">Prashant <span>Saud</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#experience">Experience</a></li>
+            <li><a href="contact.html" class="nav-cta">Contact</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <div class="page-hero">
+        <div class="page-hero-inner">
+            <div class="page-tag">Let's Connect</div>
+            <h1>Contact <em>Me</em></h1>
+            <p>Ready to streamline your business's accounting, tax planning, and statutory audits? Book a professional consultation or send an inquiry today.</p>
+        </div>
+    </div>
+
+    <!-- CONTACT MAIN -->
+    <div class="contact-main">
+        <!-- Info Column -->
+        <div class="contact-info">
+            <div class="section-tag">Get In Touch</div>
+            <h2 class="info-title">Contact <em>Information</em></h2>
+            <p class="info-body">Feel free to reach out directly via phone or email, or drop by my office in Kathmandu. I look forward to working together.</p>
+
+            <div class="contact-cards">
+                <div class="contact-card">
+                    <div class="cc-icon">📞</div>
+                    <div>
+                        <div class="cc-label">Call Me</div>
+                        <div class="cc-value"><a href="tel:+9779746246284">+977 9746246284</a></div>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="cc-icon">✉️</div>
+                    <div>
+                        <div class="cc-label">Email Me</div>
+                        <div class="cc-value"><a href="mailto:saudprashant7@gmail.com">saudprashant7@gmail.com</a></div>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="cc-icon">📍</div>
+                    <div>
+                        <div class="cc-label">Location</div>
+                        <div class="cc-value">New Baneshwor, Kathmandu, Nepal</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Form Column -->
+        <div class="contact-form-wrap">
+            <div id="contact-form-container">
+                <h3 class="form-heading">Send a Message</h3>
+                <p class="form-sub">Typical response time is within 24 business hours.</p>
+
+                <form id="contact-form" onsubmit="handleFormSubmit(event)">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" placeholder="John Doe" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" placeholder="98XXXXXXXX" required />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" placeholder="john@example.com" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">Required Service *</label>
+                        <select id="service" required>
+                            <option value="" disabled selected>Select a Service</option>
+                            <option value="Audit & Assurance">Audit & Assurance</option>
+                            <option value="Tax Advisory & Compliance">Tax Advisory & Compliance</option>
+                            <option value="Accounting & Bookkeeping">Accounting & Bookkeeping</option>
+                            <option value="Financial Reporting">Financial Reporting (NFRS/IFRS)</option>
+                            <option value="Business & Financial Advisory">Business & Financial Advisory</option>
+                            <option value="Regulatory Compliance">Regulatory Compliance (OCR/PAN)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Message *</label>
+                        <textarea id="message" placeholder="Describe your requirements here..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit" id="submit-btn">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Success Overlay -->
+            <div class="success-msg" id="success-message">
+                <div class="success-icon">✨</div>
+                <h3>Message Sent Successfully!</h3>
+                <p>Thank you for reaching out, <strong id="success-user">Name</strong>. I have received your request regarding <span id="success-srv">Service</span> and will get in touch with you shortly.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- LOCATION SECTION (MAP) -->
+    <div class="location-section reveal">
+        <div class="loc-inner">
+            <div class="loc-text">
+                <div class="loc-tag">My Location</div>
+                <h3 class="loc-title">Based In <em>Kathmandu</em></h3>
+                <div class="loc-details">
+                    <div class="loc-detail">
+                        <strong>City:</strong>
+                        <span>Kathmandu, Nepal</span>
+                    </div>
+                    <div class="loc-detail">
+                        <strong>Area:</strong>
+                        <span>New Baneshwor</span>
+                    </div>
+                    <div class="loc-detail">
+                        <strong>Availability:</strong>
+                        <span>Mon - Fri (9:00 AM - 6:00 PM)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="map-embed">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.868779951664!2d85.3377727142079!3d27.6904675328227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1997381ff573%3A0xb3de38f45a6c1e55!2sNew%20Baneshwor%2C%20Kathmandu!5e0!3m2!1sen!2snp!4v1655000000000!5m2!1sen!2snp"
+                    allowfullscreen=""
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-left-wrap">
+            <a class="footer-logo" href="index.html">Prashant <span>Saud</span></a>
+            <ul class="footer-socials">
+                <li>
+                    <a href="https://www.linkedin.com/in/prashant-sa-9bb5643a2?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/saudprashant7?igsh=MWJid3kwbzc0ajYydQ==" target="_blank" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <p class="footer-copy">&copy; <span id="copy-year">2026</span> Prashant Saud. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Scroll reveal animation
+        const reveals = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.classList.add('visible');
+                    observer.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        reveals.forEach(r => observer.observe(r));
+
+        // Mobile menu toggle
+        function toggleMenu() {
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
+
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+
+            if (navLinks.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
+            }
+        }
+
+        // Close menu on nav item click
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                const hamburger = document.querySelector('.hamburger');
+                const navLinks = document.querySelector('.nav-links');
+
+                if (navLinks.classList.contains('active')) {
+                    hamburger.classList.remove('active');
+                    navLinks.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+            });
+        });
+
+        // Form Submit Handler (Simulated API call with custom feedback modal)
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const submitBtn = document.getElementById('submit-btn');
+            const formContainer = document.getElementById('contact-form-container');
+            const successMsg = document.getElementById('success-message');
+            
+            const userName = document.getElementById('name').value;
+            const userService = document.getElementById('service').value;
+
+            // Trigger loading state
+            submitBtn.classList.add('loading');
+            submitBtn.innerText = 'Sending...';
+
+            setTimeout(() => {
+                // Populate success modal texts
+                document.getElementById('success-user').innerText = userName;
+                document.getElementById('success-srv').innerText = userService;
+
+                // Toggle visibility with smooth fade
+                formContainer.style.display = 'none';
+                successMsg.classList.add('show');
+            }, 1000);
+        }
+
+        // Dynamic copyright year
+        document.getElementById('copy-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
