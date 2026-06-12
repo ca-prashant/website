@@ -45,7 +45,36 @@
             scroll-behavior: smooth;
         }
 
-        body {
+       <a href="https://wa.me/9779746246284?text=Hello%20Prashant,%20I%20would%20like%20to%20book%20a%20free%20consultation."
+   target="_blank"
+   class="whatsapp-float"
+   aria-label="Chat on WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+         alt="WhatsApp">
+</a>
+
+<style>
+.whatsapp-float{
+    position: fixed;
+    width: 65px;
+    height: 65px;
+    bottom: 25px;
+    right: 25px;
+    z-index: 9999;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover{
+    transform: scale(1.1);
+}
+
+.whatsapp-float img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+}
+</style> body {
             font-family: 'Jost', sans-serif;
             background: var(--offwhite);
             color: var(--text);
